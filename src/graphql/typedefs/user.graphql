@@ -1,0 +1,26 @@
+type Query {
+    getUsers(
+        user: UserInput
+    ): UserResponse
+}
+
+type UserResponse {
+    data: User
+}
+input UserInput {
+    email: String
+    firstName: String
+    lastName: String
+    password: String
+
+}
+type User {
+    email: String
+    firstName: String
+    lastName: String
+    password: String
+    userId: String
+    departmentId: String
+}
+
+
