@@ -8,28 +8,32 @@ exports.errorName = {
   }
   
   exports.errorType = {
+      GRAPHQL_VALIDATION_FAILED:{
+          message: 'validation faild',
+          statusCode: 400
+      },
     UNAUTHORIZED: {
       message: 'User is unauthorized to access the resources..',
-      //statusCode: 401
+      statusCode: 401
     },
     UNAUTHENTICATED:{
       message: 'User is not authenticated...',
-      //statusCode: 401
+      statusCode: 401
     },
     TIMEOUT:{
       message: 'Timeout : Connection refused...',
-      //statusCode: 500
+      statusCode: 500
     },
     BAD_USER_INPUT:{
       message: 'Required fields are missing!!',
-      //statusCode: 400
+      statusCode: 400
     },
     INTERNAL_SERVER_ERROR:{
       message: 'Internal server error',
-      //statusCode: 500
+      statusCode: 500
     },
     INVALID_DATA:{
       message: 'Required feild are missing...',
-      //statusCode: 400
+      statusCode: 400
     }
   }

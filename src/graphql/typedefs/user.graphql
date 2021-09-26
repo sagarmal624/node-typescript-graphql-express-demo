@@ -1,6 +1,6 @@
 type Query {
     getUsers(
-        user: UserInput
+        user: UserInput!
     ): UserResponse
 }
 
@@ -8,10 +8,10 @@ type UserResponse {
     data: User
 }
 input UserInput {
-    email: String
-    firstName: String
-    lastName: String
-    password: String
+    email: String!
+    firstName: String!
+    lastName: String!
+    password: String!
 
 }
 type User {
